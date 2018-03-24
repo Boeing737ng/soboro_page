@@ -61,6 +61,14 @@
   border: 1px solid red;
   height: 100%;
 }
+.after-search {
+  margin-top: 50px;
+  width: 100%;
+  text-align: center;
+}
+.after-search input{
+  border: 1px solid #777;
+}
 
 html {
   overflow-x: hidden;
