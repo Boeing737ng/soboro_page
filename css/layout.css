@@ -42,6 +42,27 @@
   padding: 0px;
   border-radius: 5px;
 }
+.category-text-wrapper {
+  margin-top: 25px;
+  height: 70px;
+}
+.category-header {
+  color: #EE6409;
+  margin-bottom: 3px;
+  font-size: 25px;
+}
+.category-description {
+  color: #000;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+}
+.team {
+  border: 1px solid red;
+  height: 100%;
+}
+
+
 html {
   overflow-x: hidden;
 }
@@ -85,6 +106,8 @@ a:focus, a:hover, a:active {
 }
 
 .link {
+  color: #EE6407;
+  float: right;
   position: relative;
   font-size: 13px;
   font-weight: 600;
@@ -96,7 +119,7 @@ a:focus, a:hover, a:active {
   position: absolute;
   top: 8px;
   right: -15px;
-  width: 9px;
+  width: 8px;
   height: 2px;
   background: #17bed2;
   content: " ";
@@ -1157,6 +1180,7 @@ fieldset[disabled] .btn-theme {
 }
 
 .swiper-clients-img {
+  box-shadow: 0px 1px 20px 1px #bbb;
   display: block;
   width: 190px;
   height: auto;
