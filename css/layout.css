@@ -22,6 +22,26 @@
   	[The "base.scss" contains basic default element styles
   		(colors, typography, margins & padding).]
 ------------------------------------------------------------------*/
+.input-container {
+  width: 404px;
+  height: 30px;
+}
+.input-container input {
+  width: 320px;
+  height: 100%;
+  border: none;
+  padding: 0px;
+  border-radius: 5px;
+}
+.input-container button {
+  color: #fff;
+  background-color: #EE6409;
+  border: none;
+  width: 80px;
+  height: 100%;
+  padding: 0px;
+  border-radius: 5px;
+}
 html {
   overflow-x: hidden;
 }
@@ -35,10 +55,10 @@ body {
 }
 
 p {
-  font-size: 15px;
+  font-size: 23px;
   font-weight: 400;
   font-family: Hind, sans-serif;
-  color: #a6a7aa;
+  color: #fff;
   line-height: 1.4;
   margin-bottom: 15px;
 }
@@ -975,9 +995,9 @@ fieldset[disabled] .btn-theme {
 }
 
 .carousel-title {
-  font-size: 80px;
-  font-weight: 700;
-  color: #fff;
+  font-size: 60px;
+  font-weight: 400;
+  color: #EE6407;
   line-height: 1.1;
   text-transform: uppercase;
 }
