@@ -523,7 +523,8 @@ fieldset[disabled] .btn-theme {
 /* Navbar */
 .header .navbar {
   margin-bottom: 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 3px double #EE6407 !important;
+  border-radius: 0 !important;
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
@@ -603,7 +604,7 @@ fieldset[disabled] .btn-theme {
 /* Navbar Logo */
 .header .logo {
   width: 100px;
-  height: 100px;
+  height: 65px;
   float: left;
   max-height: 95px;
   line-height: 65px;
@@ -611,7 +612,6 @@ fieldset[disabled] .btn-theme {
 
 .header .logo-wrap {
   display: inline-block;
-  padding: 15px 0;
 }
 
 .header .logo-wrap:focus, .header .logo-wrap:hover {
@@ -650,6 +650,7 @@ fieldset[disabled] .btn-theme {
 
 /* Nav */
 .header .nav-item {
+  height: 65px;
   position: relative;
   display: block;
 }
@@ -680,8 +681,8 @@ fieldset[disabled] .btn-theme {
   font-family: Hind, sans-serif;
   color: #fff;
   text-transform: uppercase;
-  line-height: 55px;
-  padding: 20px;
+  line-height: 65px;
+  padding: 0px 20px;
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
