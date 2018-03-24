@@ -1,4 +1,4 @@
-.login-bg {
+.login-bg, .signup-bg {
     opacity: 0.9;
     position: absolute;
     top: 50%;
@@ -6,7 +6,6 @@
     right: 0;
     margin: auto;
     width: 400px;
-    height: 400px;
     background-color: #EE6407;
     border-radius: 25px;
     -webkit-transform: translateY(-50%);
@@ -14,7 +13,7 @@
     transform: translateY(-50%);
 }
 
-.login-wrapper {
+.login-wrapper, .signup-wrapper {
     text-align: center;
     z-index: 9999;
     position: absolute;
@@ -23,31 +22,37 @@
     right: 0;
     margin: auto;
     width: 400px;
-    height: 400px;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
 
-.login-wrapper h4 {
+.login-bg, .login-wrapper {
+    height: 400px;
+}
+.signup-bg, .signup-wrapper {
+    height: 600px;
+}
+
+.login-wrapper h4, .signup-wrapper h4 {
     font-size: 40px;
-    margin-top: 40px;
-    margin-bottom: 50px;
+    margin: 30px;
     color: #fff;
 }
 
-.login-wrapper input {
+.login-wrapper input, .signup-wrapper input {
     width: 300px;
     height: 35px;
-    margin: 10px;
+    margin: 15px;
     border-radius: 5px;
     border: none;
     background-color: #CDA58C;
     color: #000;
     font-weight: 500;
+    box-shadow: 0px 1px 10px 5px #B65220;
 }
 
-.login-wrapper a {
+.login-wrapper a, .signup-wrapper a {
     display: block;
     color: #fff;
     font-weight: 500;
