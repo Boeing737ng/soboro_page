@@ -28,8 +28,16 @@ var Layout = function () {
 
     // handle carousel
     var handleCarousel = function() {
+
+        var path = window.location.pathname;
+        var page = path.split("/").pop();
         var $item = $('.carousel .item'); 
         var $wHeight = $(window).height();
+
+        if(page === "search.html") {
+            $wHeight = 138;
+        }
+
         $item.eq(0).addClass('active');
         $item.height($wHeight / 2); 
         $item.addClass('full-screen');
