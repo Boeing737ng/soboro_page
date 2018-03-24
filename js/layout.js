@@ -1,3 +1,16 @@
+function createTagList() {
+    var wrapper = document.getElementsByClassName('swiper-wrapper');
+
+    for(var i = 1; i < 21; i++){
+        var slide = document.createElement('div');
+        var img = document.createElement('img');
+        
+        slide.className = 'swiper-slide';
+        img.className = 'swiper-clients-img';
+        img.src = 'img/tag/' + i + '.png';
+    }
+}
+
 var Layout = function () {
     'use strict';
     
