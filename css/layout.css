@@ -27,6 +27,7 @@
   height: 30px;
 }
 .input-container input {
+  padding-left: 15px;
   width: 320px;
   height: 100%;
   border: none;
