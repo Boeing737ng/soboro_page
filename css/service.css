@@ -1,0 +1,28 @@
+.upper {
+    width: 100%;
+    margin: 100px auto;
+}
+.upper-left, .upper-right, .bottom-left, .bottom-right  {
+    vertical-align: middle;
+    display: inline-block;
+    width: 49%;
+}
+.container p {
+    color: #111;
+}
+.upper-right a{
+    float: right;
+    color: #EE6409;
+    font-size: 17px;
+}
+.upper-left img{
+    width: 300px;
+}
+
+.bottom {
+    text-align: center;
+    margin: 100px auto;
+}
+.bottom a {
+    color: #EE6409;
+}
