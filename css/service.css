@@ -71,3 +71,28 @@
     padding-left: 100px;
 }
 
+.member {
+    padding: 10px;
+    box-shadow: 1px 1px 10px 3px #ccc;
+    border-radius: 11px;
+    height: 300px;
+}
+.image-wrapper, .text-wrapper {
+    vertical-align: text-top;
+    display: inline-block;
+}
+.image-wrapper {
+    width: 40%;
+    height: 90%;
+}
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    border-radius: 35px;
+}
+.text-wrapper {
+    width: 58%;
+}
+.text-wrapper p{
+    font-size: 20px;
+}
