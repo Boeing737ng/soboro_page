@@ -57,7 +57,9 @@
 .after-search input{
   border: 1px solid #777;
 }
-
+.bold {
+  font-weight: 600;
+}
 html {
   overflow-x: hidden;
 }
@@ -124,7 +126,7 @@ span {
   font-size: 14px;
   font-weight: 400;
   font-family: Hind, sans-serif;
-  color: #bfc1c7;
+  color: #222;
 }
 
 h1, h2, h3, h4, h5, h6 {
