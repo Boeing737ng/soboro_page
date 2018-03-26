@@ -26,3 +26,48 @@
 .bottom a {
     color: #EE6409;
 }
+
+/********** Rule Changer **********/
+.logo-wrapper {
+    width: 100%;
+    margin: 30px auto;
+}
+.logo-wrapper img {
+    width: 100%;
+}
+.word {
+    color: #EE6409 !important;
+    font-size: 26px;
+}
+.dictionary {
+    padding: 10px;
+    box-shadow: 1px 1px 10px 3px #ccc;
+    border-radius: 11px;
+    height: 200px;
+}
+.dictionary p {
+    font-size: 20px;
+}
+.value-image {
+    margin: 80px auto;
+    text-align: center;
+}
+.value-image img {
+    width: 450px;
+}
+.main-text{
+    color: #EE6409 !important;
+    font-size: 26px;
+}
+.rule-changer-text {
+    margin: 50px auto;
+    height: auto;
+}
+.rule-changer-text div {
+    width: 80%;
+    float: right;
+}
+.rule-changer-text div p:nth-child(even){
+    padding-left: 100px;
+}
+

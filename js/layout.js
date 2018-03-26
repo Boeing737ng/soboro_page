@@ -34,7 +34,7 @@ var Layout = function () {
         var $item = $('.carousel .item'); 
         var $wHeight = $(window).height();
 
-        if(page === "search.html" || page === "contest.html" || page === "team.html" || page === "service.html") {
+        if(page === "search.html" || page === "contest.html" || page === "team.html" || page === "service.html" || page === "rule_changer.html") {
             $wHeight = 138;
         }
 
