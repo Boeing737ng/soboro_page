@@ -28,7 +28,7 @@ var Layout = function () {
 
     // handle carousel
     var handleCarousel = function() {
-
+        
         var path = window.location.pathname;
         var page = path.split("/").pop();
         var $item = $('.carousel .item'); 
