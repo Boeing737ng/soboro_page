@@ -45,10 +45,21 @@
   height: 100%;
 }
 .contest {
-  border: 1px solid red;
-  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 1px 1px 10px 3px #ccc;
+  border-radius: 11px;
   height: 400px;
 }
+.contest-image-wrapper {
+  width: 45%;
+  height: 100%;
+}
+.contest-image-wrapper img {
+  box-shadow: 1px 1px 10px 3px #eee;
+  width: 100%;
+  height: 100%;
+}
+
 .after-search {
   margin: 40px auto;
   width: 100%;
