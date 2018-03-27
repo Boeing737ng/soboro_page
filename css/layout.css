@@ -148,8 +148,19 @@
   display: inline-block;
   width: 58%;
 }
+.text-wrapper {
+  margin-top: 10px;
+}
 .pick-me p{
-  font-size: 17px;
+  padding-left: 5px; 
+  font-size: 13px;
+}
+.contest-image {
+  height: auto;
+  text-align: center;
+}
+.contest-image img {
+  box-shadow: 1px 1px 10px 3px #ccc;
 }
 
 
