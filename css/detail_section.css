@@ -14,7 +14,7 @@
 td {
     padding-bottom: 1em;
 }
-.info-header, .middle-info-header {
+.info-header, .middle-info-header, .person-header {
     font-size: 20px;
     color: #EE6409;
     font-weight: 700;
@@ -30,9 +30,15 @@ td {
 .middle-info-header {
     width: 10%;
 }
+.person-header {
+    width: 15%;
+}
 @media (max-width: 992px) {
-    .middle-info-header, .info-text-header {
+    .middle-info-header, .info-text-header, .person-header {
         width: 20%;
+    }
+    .no-padding {
+        padding: 0;
     }
   }
 .info-text {
@@ -57,4 +63,10 @@ td {
     color: #EE6409;
     font-size: 18px;
     margin: 0px 8px 0px 8px;
+}
+.center {
+    text-align: center;
+}
+.picture {
+    max-width: 150px;
 }

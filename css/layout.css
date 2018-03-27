@@ -110,6 +110,7 @@
 .image-wrapper, .team-text {
   width: 100%;
   margin-bottom: 20px;
+  text-align: center;
 }
 .image-wrapper img{
   width: 100%;
