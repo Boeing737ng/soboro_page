@@ -7,15 +7,34 @@
     margin-top: 30px;
     width: 100%;
 }
+.info-table {
+    margin-top: 30px;
+    width: 100%;
+}
 td {
     padding-bottom: 1em;
 }
-.info-header {
-    width: 20%;
+.info-header, .middle-info-header {
     font-size: 20px;
     color: #EE6409;
     font-weight: 700;
 }
+.info-header {
+    width: 20%;
+}
+.info-text-header {
+    width: 10%;
+    font-weight: 600;
+    font-size: 17px;
+}
+.middle-info-header {
+    width: 10%;
+}
+@media (max-width: 992px) {
+    .middle-info-header, .info-text-header {
+        width: 20%;
+    }
+  }
 .info-text {
     font-size: 17px;
 }
@@ -28,4 +47,14 @@ td {
 }
 .detail img {
     box-shadow: 1px 1px 10px 3px #ccc;
+}
+.button-wrapper {
+    width: 90%;
+    margin: auto;
+    text-align: right;
+}
+.button-wrapper a {
+    color: #EE6409;
+    font-size: 18px;
+    margin: 0px 8px 0px 8px;
 }
