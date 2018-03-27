@@ -81,6 +81,7 @@
 }
 .image-wrapper img{
   width: 100%;
+  height: 100%;
 }
 
 @media (min-width: 768px) {
@@ -88,7 +89,29 @@
       height: 400px;
   }
 }
-
+.pick-me {
+  padding: 10px;
+  box-shadow: 1px 1px 10px 3px #ccc;
+  border-radius: 11px;
+  height: 150px;
+}
+.pick-me .image-wrapper {
+  vertical-align: text-top;
+  display: inline-block;
+  width: 40%;
+  height: 100%;
+}
+.pick-me .image-wrapper img {
+  border-radius: 20px;
+}
+.pick-me .text-wrapper {
+  vertical-align: text-top;
+  display: inline-block;
+  width: 58%;
+}
+.pick-me p{
+  font-size: 17px;
+}
 
 
 html {
@@ -107,7 +130,7 @@ p {
   font-size: 23px;
   font-weight: 400;
   font-family: Hind, sans-serif;
-  color: #fff;
+  color: #222;
   line-height: 1.4;
   margin-bottom: 15px;
 }
