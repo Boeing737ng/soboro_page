@@ -127,12 +127,37 @@
 
 @media (min-width: 768px) {
   .team-info {
-      height: 400px;
+    height: 400px;
   }
 }
 @media (max-width: 500px) {
   .team-info {
-      height: 450px;
+    height: 450px;
+  }
+  .input-container input {
+    width: 250px;
+  }
+  .contest {
+    height: 530px;
+  }
+  .contest-image-wrapper img {
+    height: 60%;
+  }
+  .col-md-2 img {
+    width: 100px;
+  }
+  .carousel-title {
+    margin-top: 100px;
+    font-size: 25px !important;
+  }
+  .title-description {
+    font-size: 15px;
+  }
+  .category-header {
+    font-size: 20px;
+  }
+  .category-description {
+    font-size: 16px;
   }
 }
 .pick-me {

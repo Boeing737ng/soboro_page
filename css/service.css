@@ -61,7 +61,7 @@
 }
 .rule-changer-text {
     margin: 50px auto;
-    height: auto;
+    height: 400px;
 }
 .rule-changer-text div {
     width: 80%;
@@ -83,7 +83,7 @@
 }
 .image-wrapper {
     padding: 20px;
-    width: 40%;
+    width: 35%;
     height: 100%;
 }
 .image-wrapper img {
@@ -96,4 +96,25 @@
 }
 .text-wrapper p{
     font-size: 17px;
+}
+
+@media (max-width: 500px) {
+    .rule-changer-text div {
+        width: 100%;
+        float: left;
+    }
+    .rule-changer-text p, .dictionary p, .text-wrapper p {
+        font-size: 14px;
+    }
+    .dictionary {
+        height: auto;
+    }
+    .image-wrapper {
+        padding: 3px;
+        width: 40%;
+        height: 90%;
+    }
+    .upper p, .middle p, .bottom p {
+        font-size: 14px;
+    }
 }

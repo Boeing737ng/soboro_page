@@ -33,6 +33,9 @@ td {
 .person-header {
     width: 15%;
 }
+.info-text {
+    font-size: 17px;
+}
 @media (max-width: 992px) {
     .middle-info-header, .info-text-header, .person-header {
         width: 20%;
@@ -40,9 +43,22 @@ td {
     .no-padding {
         padding: 0;
     }
-  }
-.info-text {
-    font-size: 17px;
+}
+@media (max-width: 600px) {
+    .detail {
+        padding: 0;
+    }
+}
+@media (max-width: 500px) {
+    .info-header, .person-header, .info-text-header, .info-text {
+        font-size: 15px;
+    }
+    .col-md-2 img {
+        width: 100px;
+    }
+    .middle-info-header {
+        width: 30%;
+    }
 }
 .info-text p {
     font-size: 20px;
