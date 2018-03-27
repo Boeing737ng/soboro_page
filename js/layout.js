@@ -41,7 +41,8 @@ var Layout = function () {
             "contest01.html",
             "contest02.html",
             "contest03.html",
-            "contest04.html"
+            "contest04.html",
+            "indivisual01.html"
         ];
         var path = window.location.pathname;
         var page = path.split("/").pop();
