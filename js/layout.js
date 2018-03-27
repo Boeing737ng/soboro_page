@@ -28,7 +28,21 @@ var Layout = function () {
 
     // handle carousel
     var handleCarousel = function() {
-        var minimumNavBar = ["search.html","contest.html","team.html","service.html","rule_changer.html","team01.html"];
+        var minimumNavBar = [
+            "search.html",
+            "contest.html",
+            "team.html",
+            "service.html",
+            "rule_changer.html",
+            "team01.html",
+            "team02.html",
+            "team03.html",
+            "team04.html",
+            "contest01.html",
+            "contest02.html",
+            "contest03.html",
+            "contest04.html"
+        ];
         var path = window.location.pathname;
         var page = path.split("/").pop();
         var $item = $('.carousel .item'); 

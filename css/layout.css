@@ -166,6 +166,12 @@
 }
 .contest-image img {
   box-shadow: 1px 1px 10px 3px #ccc;
+  transition: 300ms;
+}
+.contest-image img:hover, .contest:hover{
+  cursor: pointer;
+  opacity: 0.7;
+  transition: 300ms;
 }
 
 
