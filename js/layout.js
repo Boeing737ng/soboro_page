@@ -42,7 +42,10 @@ var Layout = function () {
             "contest02.html",
             "contest03.html",
             "contest04.html",
-            "indivisual01.html"
+            "indivisual01.html",
+            "indivisual02.html",
+            "indivisual03.html",
+            "indivisual04.html"
         ];
         var path = window.location.pathname;
         var page = path.split("/").pop();
