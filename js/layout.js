@@ -28,13 +28,13 @@ var Layout = function () {
 
     // handle carousel
     var handleCarousel = function() {
-        
+        var minimumNavBar = ["search.html","contest.html","team.html","service.html","rule_changer.html","team01.html"];
         var path = window.location.pathname;
         var page = path.split("/").pop();
         var $item = $('.carousel .item'); 
         var $wHeight = $(window).height();
 
-        if(page === "search.html" || page === "contest.html" || page === "team.html" || page === "service.html" || page === "rule_changer.html") {
+        if(minimumNavBar.includes(page)) {
             $wHeight = 138;
         }
 
