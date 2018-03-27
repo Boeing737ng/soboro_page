@@ -83,6 +83,13 @@
   width: 100%;
   height: 100%;
 }
+.category-description span {
+  margin-right: 20px;
+  float: right;
+}
+.category-description span a {
+  color: #EE6409 !important;
+}
 
 @media (min-width: 768px) {
   .team-info {
