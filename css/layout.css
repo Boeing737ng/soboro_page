@@ -66,7 +66,7 @@
 .contest-text-wrapper p{
   margin-left: 15px;
   margin-bottom: 5px;
-  font-size: 14px;
+  font-size: 12px;
 }
 .contest-text-wrapper h4 {
   text-align: center;
@@ -109,13 +109,22 @@
   font-size: 15px;
 }
 .image-wrapper, .team-text {
+  overflow: hidden;
   width: 100%;
   margin-bottom: 20px;
   text-align: center;
+  white-space: nowrap;
+}
+.vertical-middle-helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
 }
 .image-wrapper img{
+  max-height: 100%;
   width: 100%;
-  height: 100%;
+  height: auto;
+  vertical-align: middle;
 }
 .category-description span {
   margin-right: 20px;
@@ -129,11 +138,22 @@
   .team-info {
     height: 400px;
   }
+  .image-wrapper {
+    height: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .team-info {
+    height: auto;
+  }
+  .image-wrapper {
+    height: 50%;
+  }
+  .pick-me {
+    height: auto !important;
+  }
 }
 @media (max-width: 500px) {
-  .team-info {
-    height: 450px;
-  }
   .input-container input {
     width: 250px;
   }
@@ -164,12 +184,13 @@
   padding: 10px;
   box-shadow: 1px 1px 10px 3px #ccc;
   border-radius: 11px;
-  height: 150px;
+  height: 180px;
   transition: 300ms;
 }
 .pick-me .image-wrapper {
   vertical-align: text-top;
   display: inline-block;
+  margin: 0;
   width: 40%;
   height: 100%;
 }
@@ -179,6 +200,8 @@
 .pick-me .text-wrapper {
   vertical-align: text-top;
   display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 0;
   width: 58%;
 }
 .text-wrapper {
@@ -186,7 +209,7 @@
 }
 .pick-me p{
   padding-left: 5px; 
-  font-size: 13px;
+  font-size: 15px;
 }
 .contest-image {
   height: auto;
@@ -1785,7 +1808,7 @@ a {
 .ct-footer {
     /* background-color: #111; */
     background-image: url('../img/1920x1080/03.jpg');
-    margin-top: 20px;
+    margin-top: 150px;
     position: relative;
 }
 
