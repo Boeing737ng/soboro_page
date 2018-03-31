@@ -149,8 +149,13 @@
   .image-wrapper {
     height: 50%;
   }
+}
+@media (max-width: 992px) {
   .pick-me {
     height: auto !important;
+  }
+  .custom-width {
+    width: 100%;
   }
 }
 @media (max-width: 500px) {
