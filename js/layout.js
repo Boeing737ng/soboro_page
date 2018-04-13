@@ -135,11 +135,14 @@ $(document).ready(function() {
 function onAddInterest() {
     var tagImg;
     var tagContainer = document.createElement('div');
-    var optionContainer = document.getElementById('modal');
-    optionContainer.style.display = 'block';
+    var modal = document.getElementById('modal');
+    var body = document.getElementsByTagName('body')[0];
     var button = document.createElement('button');
-    button.className = 'tagButton';
+
+    modal.style.display = 'block';
+    button.id = 'tagButton';
     button.innerHTML = '추가';
+    button.setAttribute('onClick','closeModal()');
     tagContainer.className = 'tagContainer';
     for(var i=1; i < 25; i++) {
         tagImg = document.createElement('img');
@@ -147,15 +150,33 @@ function onAddInterest() {
         tagImg.src = './img/tag/' + i + '.png';
         tagContainer.appendChild(tagImg);
     }
+    modal.style.display = 'block';
+    body.style.overflow = 'hidden';
+    body.style.position = 'fixed';
     tagContainer.appendChild(document.createElement('br'));
     tagContainer.appendChild(button);
-    optionContainer.appendChild(tagContainer);
+    modal.appendChild(tagContainer);
 }
 
-window.onclick = function(event) {
+function closeModal() {
     var modal = document.getElementById('modal');
-    var button = document.getElementsByClassName('tagButton')[0];
-    if (event.target == modal || event.target == button) {
-        modal.style.display = "none";
+    while( modal.hasChildNodes() ){
+        modal.removeChild(modal.lastChild);
     }
+    var body = document.getElementsByTagName('body')[0];
+    modal.style.display = 'none';
+    body.style.overflow = 'auto';
+    body.style.position = 'unset';
 }
+
+// window.onclick = function(event) {
+//     var modal = document.getElementById('modal');
+//     var button = document.getElementsByClassName('tagButton')[0];
+//     var body = document.getElementsByTagName('body')[0];
+
+//     if (event.target == modal) {
+//         modal.style.display = "none";
+//         body.style.overflow = 'auto';
+//         body.style.position = 'unset';
+//     }
+// }
