@@ -131,3 +131,31 @@ var Layout = function () {
 $(document).ready(function() {
     Layout.init();
 });
+
+function onAddInterest() {
+    var tagImg;
+    var tagContainer = document.createElement('div');
+    var optionContainer = document.getElementById('modal');
+    optionContainer.style.display = 'block';
+    var button = document.createElement('button');
+    button.className = 'tagButton';
+    button.innerHTML = '추가';
+    tagContainer.className = 'tagContainer';
+    for(var i=1; i < 25; i++) {
+        tagImg = document.createElement('img');
+        tagImg.className = 'tagImg';
+        tagImg.src = './img/tag/' + i + '.png';
+        tagContainer.appendChild(tagImg);
+    }
+    tagContainer.appendChild(document.createElement('br'));
+    tagContainer.appendChild(button);
+    optionContainer.appendChild(tagContainer);
+}
+
+window.onclick = function(event) {
+    var modal = document.getElementById('modal');
+    var button = document.getElementsByClassName('tagButton')[0];
+    if (event.target == modal || event.target == button) {
+        modal.style.display = "none";
+    }
+}

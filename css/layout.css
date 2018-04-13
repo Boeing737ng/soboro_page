@@ -133,6 +133,9 @@
 .category-description span a {
   color: #EE6409 !important;
 }
+.category-description span a:hover {
+  cursor: pointer;
+}
 
 @media (min-width: 768px) {
   .team-info {
@@ -184,6 +187,10 @@
   .category-description {
     font-size: 16px;
   }
+  .tagImg {
+    width: 100px;
+    margin: 10px 3px !important;
+  }
 }
 .pick-me {
   padding: 10px;
@@ -229,7 +236,57 @@
   opacity: 0.7;
   transition: 300ms;
 }
+.tagContainer {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: 90%;
+  margin: auto;
+  transform: translate(0%,-50%);
+  text-align: center;
+  background-color: #ffff;
+  z-index: 9999;
+  overflow: auto;
+  border-radius: 15px;
+}
+.tagContainer button {
+  width: 100px;
+  height: 30px;
+  margin: 20px;
+  background-color: #EE6409;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+}
+.tagImg {
+  margin: 27px 10px;
+  transition: 300ms;
+  box-shadow: 0px 1px 20px 1px #bbb;
+}
+.tagImg:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.tagImg:active {
+  opacity: 0.5;
+}
+#modal {
+  display: none;
+  position: fixed; /* Stay in place */
+  z-index: 3000; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
 
+/* Custom style ends */
 
 html {
   overflow-x: hidden;
